@@ -1,0 +1,102 @@
+[gd_scene load_steps=11 format=3 uid="uid://5otp1h4qoa8j"]
+
+[ext_resource type="Texture2D" uid="uid://df521ii4bm8v1" path="res://Asset/UI Asset/Items/BackGround.png" id="1_ixwps"]
+[ext_resource type="Texture2D" uid="uid://8emxexor48fk" path="res://Asset/UI Asset/Items/Sales gpt.png" id="2_kxqik"]
+[ext_resource type="Texture2D" uid="uid://cme6wv8hml5ye" path="res://Asset/UI Asset/Items/facebook (1) 1.png" id="3_42ymj"]
+[ext_resource type="Texture2D" uid="uid://bohsoebogs84e" path="res://Asset/UI Asset/Items/google-symbol 1.png" id="4_36i78"]
+[ext_resource type="Texture2D" uid="uid://b1j8gpbm4oik4" path="res://Asset/UI Asset/Items/apple 1.png" id="5_08sva"]
+[ext_resource type="Texture2D" uid="uid://8mhamd6wpqbl" path="res://Asset/UI Asset/Items/SignUp Btn.png" id="6_rp3i2"]
+[ext_resource type="Texture2D" uid="uid://bo6n83xr0ypd0" path="res://Asset/UI Asset/Items/Signup.png" id="7_sm11x"]
+[ext_resource type="Texture2D" uid="uid://babbg7pqan03x" path="res://Asset/UI Asset/Items/Login Btn.png" id="8_q17md"]
+[ext_resource type="Texture2D" uid="uid://b8wfutp85e0d3" path="res://Asset/UI Asset/Items/Login.png" id="9_3wwbf"]
+[ext_resource type="Texture2D" uid="uid://dbpa2fe1eilf7" path="res://Asset/UI Asset/Items/Continue with email.png" id="10_witab"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="bg" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_ixwps")
+
+[node name="SalesGpt" type="Sprite2D" parent="."]
+position = Vector2(197, 314)
+texture = ExtResource("2_kxqik")
+
+[node name="SignUp" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 29.0
+offset_top = 680.0
+offset_right = 191.0
+offset_bottom = 750.0
+texture = ExtResource("6_rp3i2")
+
+[node name="Signupbtn" type="Button" parent="SignUp"]
+layout_mode = 0
+offset_left = 23.0
+offset_top = 14.0
+offset_right = 146.0
+offset_bottom = 53.0
+icon = ExtResource("7_sm11x")
+flat = true
+
+[node name="login" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 213.0
+offset_top = 680.0
+offset_right = 375.0
+offset_bottom = 750.0
+texture = ExtResource("8_q17md")
+
+[node name="loginpbtn" type="Button" parent="login"]
+layout_mode = 0
+offset_left = 31.0
+offset_top = 15.0
+offset_right = 154.0
+offset_bottom = 54.0
+icon = ExtResource("9_3wwbf")
+flat = true
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 73.0
+offset_top = 776.0
+offset_right = 340.0
+offset_bottom = 808.0
+icon = ExtResource("10_witab")
+flat = true
+
+[node name="social login" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="facebook" type="Button" parent="social login"]
+offset_left = 12.0
+offset_top = 547.0
+offset_right = 112.0
+offset_bottom = 647.0
+icon = ExtResource("3_42ymj")
+flat = true
+
+[node name="gmail" type="Button" parent="social login"]
+offset_left = 135.0
+offset_top = 545.0
+offset_right = 235.0
+offset_bottom = 645.0
+icon = ExtResource("4_36i78")
+flat = true
+
+[node name="apple" type="Button" parent="social login"]
+offset_left = 273.0
+offset_top = 545.0
+offset_right = 373.0
+offset_bottom = 645.0
+icon = ExtResource("5_08sva")
+flat = true

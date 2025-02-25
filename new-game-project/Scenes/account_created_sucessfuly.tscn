@@ -1,0 +1,41 @@
+[gd_scene load_steps=6 format=3 uid="uid://bbaxprfqjt8by"]
+
+[ext_resource type="Texture2D" uid="uid://df521ii4bm8v1" path="res://Asset/UI Asset/Items/BackGround.png" id="1_tc48i"]
+[ext_resource type="Texture2D" uid="uid://d20ikqtp0t06c" path="res://Asset/UI Asset/Items/Account Created Successfully!.png" id="2_bw243"]
+[ext_resource type="Texture2D" uid="uid://bgo5x0le6gr38" path="res://Asset/UI Asset/Items/Desc.png" id="3_1jl3o"]
+[ext_resource type="Texture2D" uid="uid://3ag2grw60q55" path="res://Asset/UI Asset/Items/Register Btn.png" id="4_en58t"]
+[ext_resource type="Texture2D" uid="uid://b731kx34x53mb" path="res://Asset/UI Asset/Items/Train the AI.png" id="5_wca28"]
+
+[node name="Account Created Sucessfuly" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="bg" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_tc48i")
+
+[node name="AccountCreatedSuccessfully!" type="Sprite2D" parent="."]
+position = Vector2(193, 225)
+texture = ExtResource("2_bw243")
+
+[node name="Desc" type="Sprite2D" parent="."]
+position = Vector2(190, 447)
+texture = ExtResource("3_1jl3o")
+
+[node name="TrainAi" type="Button" parent="."]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 616.0
+offset_right = 388.0
+offset_bottom = 682.0
+icon = ExtResource("4_en58t")
+flat = true
+
+[node name="TrainTheAi" type="Sprite2D" parent="TrainAi"]
+position = Vector2(191, 29)
+texture = ExtResource("5_wca28")

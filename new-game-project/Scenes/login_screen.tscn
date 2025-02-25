@@ -1,0 +1,131 @@
+[gd_scene load_steps=15 format=3 uid="uid://c0tkkg766mdfh"]
+
+[ext_resource type="Texture2D" uid="uid://df521ii4bm8v1" path="res://Asset/UI Asset/Items/BackGround.png" id="1_gf4jc"]
+[ext_resource type="Texture2D" uid="uid://dc5idt8k0ncuo" path="res://Asset/UI Asset/Items/Login To Your Account.png" id="2_vxaje"]
+[ext_resource type="Texture2D" uid="uid://ctco3epw7geyy" path="res://Asset/UI Asset/Items/Email Btn.png" id="3_h0vem"]
+[ext_resource type="Texture2D" uid="uid://y34xkwt342a2" path="res://Asset/UI Asset/Items/EmailPlaceHolder.png" id="4_oi14w"]
+[ext_resource type="Texture2D" uid="uid://cvbrkhdispyqh" path="res://Asset/UI Asset/Items/PasswordPlaceHolder.png" id="5_8cqmx"]
+[ext_resource type="Texture2D" uid="uid://dvdi3ww0c3c07" path="res://Asset/UI Asset/Items/Forget Password_.png" id="6_2t7lj"]
+[ext_resource type="Texture2D" uid="uid://csb3naokwk1ye" path="res://Asset/UI Asset/Items/login btn1.png" id="7_jp4xo"]
+[ext_resource type="Texture2D" uid="uid://cmhxl2ylv8pas" path="res://Asset/UI Asset/Items/Or Login With.png" id="8_8ipdu"]
+[ext_resource type="Texture2D" uid="uid://cme6wv8hml5ye" path="res://Asset/UI Asset/Items/facebook (1) 1.png" id="9_snje6"]
+[ext_resource type="Texture2D" uid="uid://bohsoebogs84e" path="res://Asset/UI Asset/Items/google-symbol 1.png" id="10_vvkgb"]
+[ext_resource type="Texture2D" uid="uid://b1j8gpbm4oik4" path="res://Asset/UI Asset/Items/apple 1.png" id="11_8xemt"]
+[ext_resource type="Texture2D" uid="uid://bsjshfqvv8gqa" path="res://Asset/UI Asset/Items/Line 2.png" id="12_6cf0q"]
+[ext_resource type="Texture2D" uid="uid://dkkixu2bw6p52" path="res://Asset/UI Asset/Items/don’t have an account_.png" id="13_xwopd"]
+[ext_resource type="Texture2D" uid="uid://fpxxo71wxy5y" path="res://Asset/UI Asset/Items/Register.png" id="14_53qko"]
+
+[node name="Login Screen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="bg" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_gf4jc")
+
+[node name="LoginToYourAccount" type="Sprite2D" parent="."]
+position = Vector2(202, 285)
+texture = ExtResource("2_vxaje")
+
+[node name="Email or Phone Number Field" type="LineEdit" parent="."]
+layout_mode = 0
+offset_left = -55.0
+offset_top = 337.0
+offset_right = 384.063
+offset_bottom = 403.0
+right_icon = ExtResource("3_h0vem")
+flat = true
+
+[node name="EmailPlaceHolder" type="Sprite2D" parent="Email or Phone Number Field"]
+position = Vector2(179, 36)
+texture = ExtResource("4_oi14w")
+
+[node name="PasswordField" type="LineEdit" parent="."]
+layout_mode = 0
+offset_left = -56.0
+offset_top = 449.0
+offset_right = 383.063
+offset_bottom = 515.0
+right_icon = ExtResource("3_h0vem")
+flat = true
+
+[node name="PasswordPlaceHolder" type="Sprite2D" parent="PasswordField"]
+position = Vector2(123, 35)
+texture = ExtResource("5_8cqmx")
+
+[node name="forgetPass" type="Button" parent="."]
+layout_mode = 0
+offset_left = 200.0
+offset_top = 531.0
+offset_right = 367.0
+offset_bottom = 556.0
+icon = ExtResource("6_2t7lj")
+flat = true
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_top = 592.0
+offset_right = 389.0
+offset_bottom = 690.0
+icon = ExtResource("7_jp4xo")
+flat = true
+
+[node name="OrLoginWith" type="Sprite2D" parent="."]
+position = Vector2(194, 683)
+texture = ExtResource("8_8ipdu")
+
+[node name="social login" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_top = 152.0
+offset_right = 40.0
+offset_bottom = 192.0
+
+[node name="facebook" type="Button" parent="social login"]
+offset_left = 12.0
+offset_top = 547.0
+offset_right = 112.0
+offset_bottom = 647.0
+icon = ExtResource("9_snje6")
+flat = true
+
+[node name="gmail" type="Button" parent="social login"]
+offset_left = 135.0
+offset_top = 545.0
+offset_right = 235.0
+offset_bottom = 645.0
+icon = ExtResource("10_vvkgb")
+flat = true
+
+[node name="apple" type="Button" parent="social login"]
+offset_left = 273.0
+offset_top = 545.0
+offset_right = 373.0
+offset_bottom = 645.0
+icon = ExtResource("11_8xemt")
+flat = true
+
+[node name="Line2" type="Sprite2D" parent="."]
+position = Vector2(278, 682)
+texture = ExtResource("12_6cf0q")
+
+[node name="Line3" type="Sprite2D" parent="."]
+position = Vector2(110, 682)
+texture = ExtResource("12_6cf0q")
+
+[node name="Don’tHaveAnAccount" type="Sprite2D" parent="."]
+position = Vector2(179, 800)
+texture = ExtResource("13_xwopd")
+
+[node name="Button" type="Button" parent="Don’tHaveAnAccount"]
+offset_left = 97.0
+offset_top = -10.0
+offset_right = 176.0
+offset_bottom = 14.0
+icon = ExtResource("14_53qko")
+flat = true
